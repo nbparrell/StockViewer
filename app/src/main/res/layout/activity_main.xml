@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.temple.stockviewer.MainActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <Toolbar
+        android:layout_width="100dp"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New"
+            tools:text="New" />
+
+    </Toolbar>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <FrameLayout
+            android:id="@+id/searchBarFragment"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <FrameLayout
+            android:id = "@+id/stockListFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.00">
+
+        </FrameLayout>
+    </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/stockDetailsFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></FrameLayout>
+    </FrameLayout>
+</LinearLayout>
